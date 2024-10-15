@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vector</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="screen">
+      <div id="info-bar">
+        <span class="info-bar-span">
+          Gravity Vector X: <input type="text" id="gravity-x" />
+        </span>
+        <span class="info-bar-span">
+          Gravity Vector Y: <input type="text" id="gravity-y" />
+        </span>
+        <span class="info-bar-span">
+          Simulation time: <span id="simulation-time">0</span>s
+        </span>
+        <span class="info-bar-span">
+          Stop time: <input type="text" id="stop-time" />s
+        </span>
+        <button id="simulate-button">Simulate</button>
+      </div>
+      <div id="canvas-container">
+        <canvas id="canvas"></canvas>
+      </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

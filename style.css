@@ -1,0 +1,39 @@
+/* General Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+#screen {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+/* ---- INFO BAR ---- */
+#info-bar {
+  display: grid;
+  grid-template: 1fr 1fr / repeat(4, 1fr);
+  place-items: center;
+  flex: 1;
+  background-color: gray;
+}
+#simulate-button {
+  grid-column: 1 / 5;
+  padding: 5px;
+}
+.info-bar-span input {
+  width: 40px;
+  text-align: center;
+}
+
+/* ---- CANVAS ---- */
+#canvas-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 9;
+}
+#canvas {
+  border: 2px solid black;
+}
